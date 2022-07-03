@@ -41,7 +41,7 @@ h2 {
   background-repeat: no-repeat;
 }
 .dream-big {
-  background-image: url(/images/dream-bg.png);
+  background-image: url(images/dream-bg.png);
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 100%;
@@ -56,7 +56,7 @@ h2 {
   text-transform: capitalize;
 }
 .experience-area {
-  background-image: url(/images/exp-bg.png);
+  background-image: url(images/exp-bg.png);
   background-repeat: no-repeat;
   background-position-y: 90%;
   background-size: 8%;
