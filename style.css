@@ -6,67 +6,109 @@ h1 {
   font-size: 50px;
 }
 h2 {
-  font-size: 36px;
-}
-.orange-color {
-  color: orange;
+  font-size: 40px;
 }
 .flexible-container {
   display: flex;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 .half-width {
-  width: 50%;
-  padding-left: 5%;
+  width: 40%;
+  margin-left: 7%;
 }
 .half-width img {
-  width: 80%;
+  width: 100%;
+}
+span {
+  color: orange;
 }
 .half-width p {
-  width: 90%;
-  line-break: 2px;
-  color: gray;
-}
-.link-button {
-  text-decoration: none;
-  background-image: linear-gradient(orange, tomato);
-  padding: 10px 40px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: white;
+  color: dimgray;
 }
 .top-banner {
   background-image: url(images/top-banner.png);
   background-repeat: no-repeat;
 }
+.anchor-button {
+  text-decoration: none;
+  background-image: linear-gradient(tomato, orange);
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-weight: 700;
+}
 .dream-big {
   background-image: url(images/dream-bg.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 100%;
+}
+.experience-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 120px;
 }
 .experience-item {
   width: 40%;
-  padding-left: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
+  padding: 20px 0 7% 30px;
+  box-shadow: 25px 30px 50px gray;
+}
+#full-stack {
+  border-left: 7px solid tomato;
   border-radius: 10px;
-  box-shadow: 10px 10px 30px gray;
-  text-transform: capitalize;
+}
+#baby-stack {
+  border-left: 7px solid blue;
+  border-radius: 10px;
 }
 .experience-area {
   background-image: url(images/exp-bg.png);
   background-repeat: no-repeat;
-  background-position-y: 90%;
-  background-size: 8%;
-}
-#full-stack-developer {
-  border-left: 7px solid tomato;
-}
-#baby-stack-developer {
-  border-left: 7px solid blue;
+  background-position: left;
+  background-position-y: 80%;
 }
 footer p {
   text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  .anchor-button {
+    display: flex;
+    justify-content: center;
+  }
+  .flexible-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .half-width {
+    width: 85%;
+  }
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 50px;
+  }
+  .experience-item {
+    width: 80%;
+  }
+  .experience-area h1 {
+    text-align: center;
+  }
 }
